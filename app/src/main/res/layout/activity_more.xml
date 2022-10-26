@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".More">
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="652dp"
+        android:layout_height="475dp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/moreheader"
+        tools:layout_editor_absoluteX="-121dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="328dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="7dp"
+        android:text="  More Options"
+        android:textColor="@color/colorWhite"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtAbout"
+        app:layout_constraintEnd_toEndOf="@+id/txtAbout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAbout"
+        style="@style/btnMore"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="15dp"
+        android:paddingTop="21dp"
+        android:text="About us"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtHelp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        tools:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txtHelp"
+        style="@style/btnMore"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="13dp"
+        android:elevation="15dp"
+        android:paddingTop="21dp"
+        android:text="Help"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtSignout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAbout" />
+
+    <TextView
+        android:id="@+id/txtSignout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="348dp"
+        android:background="@drawable/signout_more"
+        android:paddingTop="21dp"
+        android:text="Sign-out"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHelp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
